@@ -1,4 +1,4 @@
-## Step 3 - Setup & Run Model A
+**Step 3 - Setup & Run Model A**
 
 This step combines logging in to the Red Hat Registry, pulling the server image, and running the first model (Model A).
 

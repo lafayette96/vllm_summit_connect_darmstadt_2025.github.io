@@ -1,4 +1,4 @@
-# Hands-on Lab: Host your own LLM with the Red Hat vLLM Inference Server
+**Hands-on Lab: Host your own LLM with the Red Hat vLLM Inference Server**
 
 **Welcome!**
 

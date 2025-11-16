@@ -1,4 +1,4 @@
-**What you will learn**
+**What you will learn:**
 
 By the end of the lab, you will:
 
@@ -13,7 +13,7 @@ The focus
 
 How to run trusted, optimized models on RHEL AI, and how to compare them using evaluation tools.
 
-**Your setup**
+**Your setup:**
 
 Each group gets:
 
