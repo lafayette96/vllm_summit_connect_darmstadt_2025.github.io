@@ -1,4 +1,4 @@
-## **Step 4 \- Talk to the original model**
+## **Step 5 \- Talk to the original model**
 
 Open a **second terminal** to the same VM (feel free to use tmux).
 

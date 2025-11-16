@@ -1,5 +1,3 @@
-## **Step 8 \- (Optional) Web UI**
-
 To run a WebUI, we need to enable container communication.
 
 1. Create a podman network:  

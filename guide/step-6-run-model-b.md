@@ -1,4 +1,4 @@
-## **Step 5 \- Run Model B (W8A8 variant)**
+## **Step 6 \- Run Model B (W8A8 variant)**
 
 Now we serve the other variant of model using the same Red Hat AI Inference Server image.
 
