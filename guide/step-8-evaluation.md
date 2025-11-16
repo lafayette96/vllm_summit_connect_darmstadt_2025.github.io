@@ -1,4 +1,4 @@
-## **Step 8 \- Use an evaluation tool to compare them**
+**Step 8 \- Use an evaluation tool to compare them**
 
 Now we use a lightweight evaluation tool (llm-eval-test) to send a small benchmark to each model and compare.
 

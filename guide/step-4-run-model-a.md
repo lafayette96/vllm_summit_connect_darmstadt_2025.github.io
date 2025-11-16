@@ -1,4 +1,4 @@
-## **Step 4 \- Run the Mistral model**
+**Step 4 \- Run the Mistral model**
 
 Create a volume and mount it into the container. Adjust the container permissions so that the container can use it.
 

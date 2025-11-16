@@ -1,3 +1,5 @@
+**Step 9 \- Use web UI to interact with a model (optional)**
+
 To run a WebUI, we need to enable container communication.
 
 1. Create a podman network:  

@@ -1,4 +1,4 @@
-## **Step 7 \- Talk to Model B**
+**Step 7 \- Talk to Model B**
 
 In another terminal, send a request to Model B.  
 (Note the port 8001 \- change to 8000 if you're running sequentially).  

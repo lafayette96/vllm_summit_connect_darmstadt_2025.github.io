@@ -1,4 +1,4 @@
-## **Step 2 \- Log in to Red Hat Registry**
+**Step 2 \- Authenticate with Red Hat Container Registry**
 
 Login to Red Hat Registry (if your environment is not preconfigured):
 

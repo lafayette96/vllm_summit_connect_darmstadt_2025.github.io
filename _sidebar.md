@@ -2,7 +2,7 @@
 * [Lab Guide]()
   * [Introduction](guide/introduction.md)
   * [1. Connect & Verify](guide/step-1-connect.md)
-  * [2. Log in to Registry](guide/step-2-registry-login.md)
+  * [2. Authenticate with registry](guide/step-2-registry-login.md)
   * [3. Pull Server Image](guide/step-3-pull-image.md)
   * [4. Run Model A (FP8)](guide/step-4-run-model-a.md)
   * [5. Talk to Model A](guide/step-5-test-model-a.md)
