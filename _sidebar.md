@@ -1,0 +1,1 @@
+HomeLab Guide1. Introduction2. Connect & Verify3. Log in to Registry4. Pull Server Image5. Run Model A (FP8)6. Talk to Model A7. Run Model B (W8A8)8. Talk to Model B9. Compare with Eval Tool10. (Optional) Web UIAppendixAlternative Setup

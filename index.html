@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hands-on Lab: Compare Optimized Mistral Models on RHEL AI</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Workshop instructions for Summit Connect vLLM">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <!-- 
+    This is the default Docsify theme.
+    You can find other themes here: https://docsify.js.org/#/themes 
+  -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+</head>
+<body>
+  <!-- This #app div is where Docsify will render your content -->
+  <div id="app"></div>
+
+  <script>
+    // Docsify configuration
+    window.$docsify = {
+      name: 'vLLM Summit Connect Lab',
+      repo: 'https://github.com/lafayette96/vllm_summit_connect_darmstadt_2025.github.io',
+      loadSidebar: true,    // We will create a _sidebar.md file
+      subMaxLevel: 2,       // Show headings up to H2 in the sidebar
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md' // Load the same sidebar for all pages
+      },
+      auto2top: true,       // Scroll to top on page change
+      homepage: 'README.md' // Set the homepage to README.md
+    }
+  </script>
+  <!-- Main Docsify script -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- Plugin for code block syntax highlighting -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+</body>
+</html>
