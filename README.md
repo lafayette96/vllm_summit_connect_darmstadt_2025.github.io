@@ -1,6 +1,6 @@
 # Hands-on Lab: Host your own LLM with the Red Hat vLLM Inference Server
 
-### **Welcome!**
+**Welcome!**
 
 In this lab, you'll run two optimized versions of the same Mistral model on RHEL AI with GPUs and see how their quality and behavior compare.
 
