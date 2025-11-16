@@ -6,35 +6,106 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Workshop instructions for Summit Connect vLLM">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <!-- 
-    This is the default Docsify theme.
-    You can find other themes here: https://docsify.js.org/#/themes 
-  -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  
+  <!-- NEW THEME: "theme-simple" -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
 </head>
 <body>
-  <!-- This #app div is where Docsify will render your content -->
+  
   <div id="app"></div>
-
+    
   <script>
     // Docsify configuration
     window.$docsify = {
       name: 'vLLM Summit Connect Lab',
       repo: 'https://github.com/lafayette96/vllm_summit_connect_darmstadt_2025.github.io',
-      loadSidebar: true,    // We will create a _sidebar.md file
-      subMaxLevel: 2,       // Show headings up to H2 in the sidebar
+      
+      // --- New options from example ---
+      auto2top: true,
+      executeScript: true,
+      loadSidebar: true,
+      subMaxLevel: 2,
       alias: {
-        '/.*/_sidebar.md': '/_sidebar.md' // Load the same sidebar for all pages
+        '/.*/_sidebar.md': '/_sidebar.md'
       },
-      auto2top: true,       // Scroll to top on page change
-      homepage: 'README.md' // Set the homepage to README.md
+      copyCode: {
+        buttonText : '✂️',
+        errorText  : '😔',
+        successText: '💚 copied'
+      },
+      pagination: {
+        crossChapter: true
+      },
+      search: 'auto', // default
+      // Add a footer
+      plugins: [
+        function(hook) {
+          var footer = `
+            <hr/>
+            <footer>
+            <span><a href="https://www.redhat.com/en/technologies/all-products/artificial-intelligence"> 🤖 Red Hat AI</a></span>
+            </footer>
+          `;
+
+          hook.afterEach(function(html) {
+            return html + footer;
+          });
+        }
+      ],
     }
   </script>
-  <!-- Main Docsify script -->
+
+  <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <!-- Plugin for code block syntax highlighting -->
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  
+  <!-- NEW PLUGINS -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>  
+  <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-yaml.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-prism@latest/dist/docsify-prism.min.js"></script>
+  
+  <!-- NEW STYLES (from example, minus the form) -->
+  <style>
+    p.tip {
+      border-left-color: #4D4D4D;
+    }
+    p.tip:before {
+      content: "!";
+      background-color: #4D4D4D;
+    }
+    .sidebar {
+        background-color: #f3f3f3;
+    }
+
+    .slider {
+      width: 67em;
+      height: 250px;
+      display: flex;
+      overflow-x: auto;
+    }
+    .slide {
+      width: 67em;
+      flex-shrink: 0;
+      height: 100%;
+    }
+    
+    :root {
+      --base-font-size: 14px;
+      --base-font-family: "RedHatText",Overpass,"Open Sans",Helvetica,Arial,sans-serif;
+      --theme-color: #CC0000;
+      --content-max-width: 75em;
+      --sidebar-width: 19rem;
+      --sidebar-nav-pagelink-background-image            : ;
+      --sidebar-nav-pagelink-background-image--active    : ;
+      --sidebar-nav-pagelink-background-image--collapse  : ;
+      --sidebar-nav-pagelink-background-image--loaded    : ;
+    }
+  </style>
 </body>
 </html>
