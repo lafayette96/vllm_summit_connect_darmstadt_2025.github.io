@@ -9,7 +9,7 @@ By the end of the lab, you will:
    * Send the same tasks to both models  
    * Compare their answers and behavior
 
-**The focus**
+The focus
 
 How to run trusted, optimized models on RHEL AI, and how to compare them using evaluation tools.
 
