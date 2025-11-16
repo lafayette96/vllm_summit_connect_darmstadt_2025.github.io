@@ -1,4 +1,6 @@
-Step 1 - Connect and VerifyIn your terminal: `ssh cloud-user@bastion.9kb2z.sandbox3231.opentlc.com`
+## **Step 1 \- Log in and verify**
+
+Make sure you can access RHEL AI VM prepared for you: `ssh cloud-user@bastion.9kb2z.sandbox3231.opentlc.com`
 
 If it fails → call a facilitator.
 
