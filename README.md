@@ -2,7 +2,7 @@
 
 **Welcome!👋**
 
-In this lab, you'll run two optimized versions of the same Mistral model on RHEL AI(*) with GPUs and see how their quality and behavior compare.
+In this lab, you'll run two optimized versions of the same Mistral model on RHEL AI **(*)** with GPUs and see how their quality and behavior compare.
 
 We'll use:
 
@@ -14,7 +14,7 @@ No model training, no long-running compression jobs - everything you do should b
 
 You'll work in teams of 2-3 in a shared environment.
 
-(*)If you're asking yourself, what on earth RHEL AI is, here's an explanation:
+**(*)**If you're asking yourself, what on earth RHEL AI is, here's an explanation:
 
 In the simplest terms, RHEL AI is Red Hat Enterprise Linux. More specifically, RHEL AI is an optimized and highly-tuned version of RHEL that provides a foundation model platform for consistently developing, refining, testing and running Granite family large language models (LLM) to power enterprise AI applications.
 
