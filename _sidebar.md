@@ -10,5 +10,5 @@
   * [7. Talk to Model B](guide/step-7-test-model-b.md)
   * [8. Compare with Eval Tool](guide/step-8-evaluation.md)
   * [9. (Optional) Web UI](guide/step-9-optional-webui.md)
-* [Appendix](appendix/README.md)
+* [Appendix]()
   * [Alternative Setup](appendix/local-setup.md)
