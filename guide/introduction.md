@@ -9,9 +9,9 @@ By the end of the lab, you will:
    * Send the same tasks to both models  
    * Compare their answers and behavior
 
-The focus
+The focus:
 
-How to run trusted, optimized models on RHEL AI, and how to compare them using evaluation tools.
+How to run trusted, optimized models directyl on Linux, and how to compare them using evaluation tools.
 
 **Your setup:**
 
@@ -29,7 +29,7 @@ We are going to connect and use:
 * Red Hat registry credentials  
 * Hugging Face token (HF\_TOKEN) with read access
 
-**Facilitators:**
+**Facilitators will:**
 
 * Give you SSH details.  
 * Make sure HF\_TOKEN and registry access are ready.
