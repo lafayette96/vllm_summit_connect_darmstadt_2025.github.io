@@ -1,5 +1,5 @@
 * [Home](README.md)
-* **Lab Guide**
+* [Lab Guide](guide/README.md)
   * [1. Introduction](guide/introduction.md)
   * [2. Connect & Verify](guide/step-1-connect.md)
   * [3. Log in to Registry](guide/step-2-registry-login.md)
