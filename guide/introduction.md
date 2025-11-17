@@ -9,9 +9,9 @@ By the end of the lab, you will:
    * Send the same tasks to both models  
    * Compare their answers and behavior
 
-The focus:
+**The focus:**
 
-How to run trusted, optimized models directyl on Linux, and how to compare them using evaluation tools.
+How to run trusted, optimized models directly on Linux, and how to compare them using evaluation tools.
 
 **Your setup:**
 
@@ -21,7 +21,7 @@ Each group gets:
 * 4 NVIDIA GPU(s)  
 * podman installed  
 * Network access to:  
-  * registry.redhat.io (for the serving image)  
+  * registry.redhat.io (to pull images)  
   * huggingface.co (for downloading the model)
 
 We are going to connect and use:

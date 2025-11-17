@@ -12,7 +12,9 @@ We'll use:
 
 No model training, no long-running compression jobs - everything you do should be visible within 60 minutes.
 
-You'll work in teams of 2-3 in a shared environment.
+You'll work in teams of 2-3 in a shared environment - you'll get an ssh command and a password that will allow you to login to your RHEL AI virtual machine. 
+
+Now please gather in groups and get credentials from the facilitators. Once you've met your partners in crime and you have your environment ready, feel free to go to Lab Guide -> Introduction.
 
 **(1)** If you're asking yourself, what on earth RHEL AI is, here's a quick explanation:
 
