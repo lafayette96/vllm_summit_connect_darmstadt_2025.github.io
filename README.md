@@ -10,13 +10,13 @@ We'll use:
 * Two pre-optimized Mistral variants (already compressed/quantized by Red Hat)
 * A small evaluation tool to compare them
 
-No model training, no long-running compression jobs - everything you do should be visible within the 90 minutes.
+No model training, no long-running compression jobs - everything you do should be visible within 60 minutes.
 
 You'll work in teams of 2-3 in a shared environment.
 
-**(1)**If you're asking yourself, what on earth RHEL AI is, here's an explanation:
+**(1)** If you're asking yourself, what on earth RHEL AI is, here's a quick explanation:
 
-In the simplest terms, RHEL AI is Red Hat Enterprise Linux. More specifically, RHEL AI is an optimized and highly-tuned version of RHEL that provides a foundation model platform for consistently developing, refining, testing and running Granite family large language models (LLM) to power enterprise AI applications.
+In the simplest terms, RHEL AI is Red Hat Enterprise Linux. More specifically, RHEL AI is an optimized and highly-tuned version of RHEL that provides a foundation model platform for consistently developing, refining, testing and running large language models (LLM) to power enterprise AI applications.
 
 RHEL AI also takes advantage of image mode for Red Hat Enterprise Linux, a new approach to operating system deployment that lets users build, deploy and manage RHEL as a bootable container (bootc) image. This means RHEL AI can be deployed, managed and scaled the same way you deploy, manage and scale any containerized application.
 
