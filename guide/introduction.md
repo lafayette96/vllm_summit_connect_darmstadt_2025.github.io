@@ -29,9 +29,4 @@ We are going to connect and use:
 * Red Hat registry credentials  
 * Hugging Face token (HF\_TOKEN) with read access
 
-**Facilitators will:**
-
-* Give you SSH details.  
-* Make sure HF\_TOKEN and registry access are ready.
-
 If something doesn't work: **raise your hand immediately**. That's part of the workshop.

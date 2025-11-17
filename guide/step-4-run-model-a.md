@@ -2,16 +2,21 @@
 
 Create a volume and mount it into the container. Adjust the container permissions so that the container can use it.
 
+```bash
 mkdir \-p rhaiis-cache-mistral  
 chmod g+rwX rhaiis-cache-mistral
+```
 
 Create or append your HF\_TOKEN Hugging Face token to the private.env file. Source the private.env file.
 
+```bash
 echo "export HF\_TOKEN=\<your\_HF\_token\>" \> private.env  
 source private.env
+```
 
 Start the model server with the original model:
 
+```bash
 podman run \--rm \-it \\  
  \--device \[nvidia.com/gpu=all\](https://nvidia.com/gpu=all) \\  
  \--security-opt=label=disable \\  
@@ -34,6 +39,7 @@ podman run \--rm \-it \\
  \--max-model-len 8192 \\  
  \--max-num-seqs 32 \\  
  \--kv-cache-dtype fp8
+ ```
 
 Leave this running in that terminal.
 

@@ -1,9 +1,12 @@
 **Step 2 \- Authenticate with Red Hat Container Registry**
 
-Login to Red Hat Registry (if your environment is not preconfigured):
+
+<span style="color:red">**This step is optional - we pre-pulled the required images for you!**</span>
+
+Login to Red Hat Registry:
 
 ```bash
 podman login registry.redhat.io
 ```
 
-Use either your own Red Hat account or the credentials provided in the session.
+Use either your personal Red Hat Developer account.
