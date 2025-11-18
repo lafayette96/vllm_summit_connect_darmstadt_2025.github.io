@@ -10,6 +10,8 @@ We'll use:
 * Two pre-optimized Mistral variants (already compressed/quantized by Red Hat)
 * A small evaluation tool to compare them
 
+Below you can see a diagram of an environment used in the workshop:
+
 ![Demo diagram](/_media/demo-diagram-vllm.png)
 
 No model training, no long-running compression jobs - everything you do should be visible within 60 minutes.
