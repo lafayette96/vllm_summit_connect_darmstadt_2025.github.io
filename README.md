@@ -41,4 +41,6 @@ RHEL AI also takes advantage of image mode for Red Hat Enterprise Linux, a new a
 
 In essence, RHEL AI is a fully-equipped LLM development, tuning and hosting platform that can be deployed and managed with Red Hat OpenShift AI anywhere across the hybrid cloud, from on-prem to edge.
 
+```bash
 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
+```
