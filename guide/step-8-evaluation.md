@@ -2,52 +2,46 @@
 
 Now we use a lightweight evaluation tool (llm-eval-test) to send a small benchmark to each model and compare.
 
-1. Create a venv:  
+Model A
 
 ```bash
-python3 -m venv eval-venv
-source eval-venv/bin/activate
+curl http://localhost:8000/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "RedHatAI/Mistral-Small-3.1-24B-Instruct-2503-FP8-dynamic",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert on Red Hat and enterprise open source. Answer clearly and concisely."
+      },
+      {
+        "role": "user",
+        "content": "What does Red Hat do as a company, and name three key products or technologies it provides?"
+      }
+    ],
+    "max_tokens": 150,
+    "temperature": 0.2
+  }' | python3 -m json.tool
+  ```
 
-pip install --upgrade pip
-pip install requests
-```
+  Model B
 
-2. Download a tiny evaluation dataset:  
-
-```bash
-mkdir -p datasets
-llm-eval-test download \
-  --datasets ./datasets \
-  --tasks arc_challenge
-```
-
-3. Run against Model A (FP8):  
-
-```bash
-llm-eval-test run \
-  --endpoint http://127.0.0.1:8000/v1/completions \
-  --model RedHatAI/Mistral-Small-3.1-24B-Instruct-2503-FP8-dynamic \
-  --datasets ./datasets \
-  --tasks arc_challenge \
-  --output results_fp8.json \
-  --format summary
-```
-
-4. Run against Model B (W8A8):  
-
-```bash
-llm-eval-test run \
-  --endpoint http://127.0.0.1:8001/v1/completions \
-  --model RedHatAI/Mistral-Small-3.1-24B-Instruct-2503-quantized.w8a8 \
-  --datasets ./datasets \
-  --tasks arc_challenge \
-  --output results_w8a8.json \
-  --format summary
-```
-
-Look at the summaries:
-
-* Did one model perform slightly better?  
-* Are they close?
-
-This is how you quantify trade-offs between different optimized variants.
+  ```bash
+  curl http://localhost:8001/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "RedHatAI/Mistral-Small-3.1-24B-Instruct-2503-quantized.w8a8",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert on Red Hat and enterprise open source. Answer clearly and concisely."
+      },
+      {
+        "role": "user",
+        "content": "What does Red Hat do as a company, and name three key products or technologies it provides?"
+      }
+    ],
+    "max_tokens": 150,
+    "temperature": 0.2
+  }' | python3 -m json.tool
+  ```
