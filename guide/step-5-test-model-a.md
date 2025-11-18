@@ -1,18 +1,22 @@
-**Step 5 \- Talk to the original model**
+**Step 4 \- Talk to the model A**
 
 Open a **second terminal** to the same VM (feel free to use tmux).
 
+```bash
 ssh cloud-user@bastion.9kb2z.sandbox3231.opentlc.com
+```
 
 Send a test request:
 
-curl \-s \-X POST http://localhost:8000/v1/completions \\  
- \-H "Content-Type: application/json" \\  
- \-d '{  
-    "model": "RedHatAI/Mistral-Small-3.1-24B-Instruct-2503-FP8-dynamic",  
-    "prompt": "What is the capital of France?",  
-    "max\_tokens": 50  
- }' | jq
+```bash
+curl -s -X POST http://LocalIPAddress:8000/v1/completions \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "RedHatAI/Mistral-Small-3.1-24B-Instruct-2503-FP8-dynamic",
+    "prompt": "What is the capital of France?",
+    "max_tokens": 50
+  }' | jq
+ ```
 
 You should see JSON with a sensible answer.
 
