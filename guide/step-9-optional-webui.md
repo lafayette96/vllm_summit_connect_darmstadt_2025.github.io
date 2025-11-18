@@ -41,7 +41,7 @@ podman run --rm -it \
 In another terminal we can now start the WebUI:
 
 ```bash
-podman run -d --name=chatbot --net=chat -p 8080:8080  \ quay.io/mklaasse/openai-chat-ng:latest
+podman run -d --name=chatbot --net=chat -p 8080:8080 quay.io/mklaasse/openai-chat-ng:latest
 ```
 
 Command ```bash podman ps ``` now should show at least two containers: 
@@ -66,12 +66,12 @@ ssh  -L 8000:localhost:8000 cloud-user@bastion.<your_ID>.opentlc.com sleep 3600
 
 And keep it open.
 
-Now you can point your browser to ```bash http://localhost8080: ```
+Now you can point your browser to ` http://localhost8080 `
 You should see a browser window with the title “OpenAI Chat Frontent”. A very simple Web Frontend to the OpenAI API.
 
-Now enter in the API URLField: ```bash http://localhost:8000/v1 ```
+Now enter in the API URLField: ` http://localhost:8000/v1 `
 
-In the Bearer Token / API Key: ```bash handsonday ```
+In the Bearer Token / API Key: ` bash handsonday `
 
 And press the button: **“Fetch Available Models”**.
 
@@ -81,6 +81,6 @@ You still have time left?
 
 Try to start an alternative, more comprehensive WebUI, OpenWebUI. 
 
-Hint: the container image can be found here: ```bash ghcr.io/open-webui/open-webui:main ```
+Hint: the container image can be found here: ` ghcr.io/open-webui/open-webui:main `
 More  hints in this getting-started Guide: https://docs.openwebui.com/getting-started/quick-start
 (and remember docker -> podman \;\-\)\) 
