@@ -14,6 +14,15 @@ Below you can see a diagram of an environment used in the workshop:
 
 ![Demo diagram](/_media/demo-diagram-vllm.png)
 
+1. Accessing the RHEL AI environment via SSH and verifying GPU, Podman and registries
+2. Log in to the Red Hat Registry and pull the Red Hat AI Inference Server container image (vllm-cuda-rhel9:3.0.0)
+3. Start the server running Model A to enable model download and inference
+4. Call the model using the OpenAI-style HTTP API (curl to port 8000).
+5. Run a second, differently optimized variant of the model (quantized W8A8)
+6. Use the llm-eval-test tool 
+7. (Optional) Deploy a simple Web UI container to interact with the model via a browser.
+
+
 No model training, no long-running compression jobs - everything you do should be visible within 60 minutes.
 
 You'll work in teams of 2-3 in a shared environment - you'll get an ssh command and a password that will allow you to login to your RHEL AI virtual machine. 
