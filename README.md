@@ -25,7 +25,11 @@ Below you can see a diagram of an environment used in the workshop:
 
 No model training, no long-running compression jobs - everything you do should be visible within 60 minutes.
 
-You'll work in teams of 2-3 in a shared environment - you'll get an ssh command and a password that will allow you to login to your RHEL AI virtual machine. 
+You'll work in teams of 2-3 in a shared environment. Below you can find credentials to the workshop where you can sign up:
+
+Workshop URL: https://catalog.demo.redhat.com/workshop/wfw7ya
+
+Password: summit2025
 
 Now please gather in groups and get credentials from the facilitators. Once you've met your partners in crime and you have your environment ready, feel free to go to Lab Guide -> Introduction.
 
