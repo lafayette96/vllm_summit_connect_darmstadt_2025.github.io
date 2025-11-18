@@ -10,6 +10,8 @@ We'll use:
 * Two pre-optimized Mistral variants (already compressed/quantized by Red Hat)
 * A small evaluation tool to compare them
 
+![Demo diagram](/_media/demo-diagram-vllm.png)
+
 No model training, no long-running compression jobs - everything you do should be visible within 60 minutes.
 
 You'll work in teams of 2-3 in a shared environment - you'll get an ssh command and a password that will allow you to login to your RHEL AI virtual machine. 
