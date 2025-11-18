@@ -2,6 +2,10 @@
 
 **Welcome!👋**
 
+```bash
+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
+```
+
 In this lab, you'll run two optimized versions of the same Mistral model on RHEL AI **(1)** with GPUs and see how their quality and behavior compare.
 
 We'll use:
@@ -41,6 +45,3 @@ RHEL AI also takes advantage of image mode for Red Hat Enterprise Linux, a new a
 
 In essence, RHEL AI is a fully-equipped LLM development, tuning and hosting platform that can be deployed and managed with Red Hat OpenShift AI anywhere across the hybrid cloud, from on-prem to edge.
 
-```bash
-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
-```
