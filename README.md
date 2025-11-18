@@ -3,7 +3,7 @@
 **Welcome!👋**
 
 ```bash
-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
+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
 ```
 
 In this lab, you'll run two optimized versions of the same Mistral model on RHEL AI **(1)** with GPUs and see how their quality and behavior compare.
