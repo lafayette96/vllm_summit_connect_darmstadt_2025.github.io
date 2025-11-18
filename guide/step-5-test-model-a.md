@@ -9,7 +9,7 @@ ssh cloud-user@bastion.9kb2z.sandbox3231.opentlc.com
 Send a test request:
 
 ```bash
-curl -s -X POST http://LocalIPAddress:8000/v1/completions \
+curl -s -X POST http://localhost:8000/v1/completions \
   -H "Content-Type: application/json" \
   -d '{
     "model": "RedHatAI/Mistral-Small-3.1-24B-Instruct-2503-FP8-dynamic",

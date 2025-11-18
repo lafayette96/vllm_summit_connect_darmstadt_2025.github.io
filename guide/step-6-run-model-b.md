@@ -2,16 +2,17 @@
 
 Now we serve the other variant of model using the same Red Hat AI Inference Server image.
 
-Model B: RedHatAI/Mistral-Small-3.1-24B-Instruct-2503-quantized.w8a8  
+Model B is called RedHatAI/Mistral-Small-3.1-24B-Instruct-2503-quantized.w8a8  
+
 This is another Red Hat-provided quantized version of the same base model, using a different scheme (W8A8/INT8-style). 
 
-"w8” means the weights of the model are quantized to 8-bit integers (int8) rather than full precision floating point.
+**"w8”** means the weights of the model are quantized to 8-bit integers (int8) rather than full precision floating point.
 
-“a8” means the activations (the intermediate outputs during inference) are also quantized to 8-bit integers.
+**“a8”** means the activations (the intermediate outputs during inference) are also quantized to 8-bit integers.
 
 Put together: w8a8 = weights in 8-bit, activations in 8-bit (often called INT8 quantisation)
 
-Let's run it!
+Now that we know all the details, let's run it!
 
 Example (using port 8001; adjust if running sequentially):
 
