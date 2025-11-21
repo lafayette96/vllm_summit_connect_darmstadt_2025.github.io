@@ -28,7 +28,7 @@ No model training, no long-running compression jobs - everything you do should b
 
 You'll work in teams of 2-3 in a shared environment. Below you can find credentials to the workshop where you can sign up:
 
-Workshop URL: https://catalog.demo.redhat.com/workshop/wfw7ya
+Workshop URL: <here>
 
 Password: summit2025
 
